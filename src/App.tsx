@@ -20,7 +20,7 @@ function App() {
         
         <main className="container mx-auto">
           <Routes>
-            <Route path="/dasbhboard" element={<MembershipDashboard />} />
+            <Route path="/dashboard" element={<MembershipDashboard />} />
             <Route path="/tiers" element={<MembershipTiers />} />
           </Routes>
         </main>

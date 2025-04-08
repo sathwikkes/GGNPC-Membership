@@ -8,19 +8,19 @@ import MembershipDashboard from './components/MembershipDashboard/MembershipDash
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/GGNPC-Membership">
       <div className="min-h-screen bg-white">
         <nav className="bg-green-800 text-white p-4">
           <h1 className="text-2xl font-bold">GGNPC Membership Analysis</h1>
           <div className="mt-4">
-            <Link to="/" className="mr-4 hover:text-gray-300">Dashboard</Link>
+            <Link to="/dashboard" className="mr-4 hover:text-gray-300">Dashboard</Link>
             <Link to="/tiers" className="hover:text-gray-300">Membership Tiers</Link>
           </div>
         </nav>
         
         <main className="container mx-auto">
           <Routes>
-            <Route path="/" element={<MembershipDashboard />} />
+            <Route path="/dasbhboard" element={<MembershipDashboard />} />
             <Route path="/tiers" element={<MembershipTiers />} />
           </Routes>
         </main>

@@ -1,7 +1,7 @@
 {
   "name": "membership-dashboard",
   "version": "0.1.0",
-  "homepage": "https://yourusername.github.io/membership-site",
+  "homepage": "https://sathwikkes.github.io/membership-site",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",

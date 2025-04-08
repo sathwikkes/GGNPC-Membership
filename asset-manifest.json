@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/GGNPC-Membership/static/css/main.a1dc4573.css",
-    "main.js": "/GGNPC-Membership/static/js/main.7927223d.js",
+    "main.css": "/GGNPC-Membership/static/css/main.98d3fa8e.css",
+    "main.js": "/GGNPC-Membership/static/js/main.a580b085.js",
     "static/js/453.1dc86443.chunk.js": "/GGNPC-Membership/static/js/453.1dc86443.chunk.js",
     "index.html": "/GGNPC-Membership/index.html",
-    "main.a1dc4573.css.map": "/GGNPC-Membership/static/css/main.a1dc4573.css.map",
-    "main.7927223d.js.map": "/GGNPC-Membership/static/js/main.7927223d.js.map",
+    "main.98d3fa8e.css.map": "/GGNPC-Membership/static/css/main.98d3fa8e.css.map",
+    "main.a580b085.js.map": "/GGNPC-Membership/static/js/main.a580b085.js.map",
     "453.1dc86443.chunk.js.map": "/GGNPC-Membership/static/js/453.1dc86443.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a1dc4573.css",
-    "static/js/main.7927223d.js"
+    "static/css/main.98d3fa8e.css",
+    "static/js/main.a580b085.js"
   ]
 }

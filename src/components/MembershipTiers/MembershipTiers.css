@@ -1,0 +1,181 @@
+/* Main container */
+.membership-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+  }
+  
+  /* Header styles */
+  .membership-title {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .membership-intro {
+    text-align: left;
+    margin-bottom: 24px;
+    line-height: 1.5;
+  }
+  
+  /* Key changes section */
+  .key-changes-section {
+    background-color: #f0f7ff;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 32px;
+  }
+  
+  .key-changes-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .key-changes-list {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .key-changes-list li {
+    margin-bottom: 4px;
+    line-height: 1.5;
+  }
+  
+  /* Tier cards container */
+  .tiers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+  
+  /* Individual tier card */
+  .tier-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-top: 4px solid #ccc; /* Default border color, will be overridden inline */
+  }
+  
+  /* Tier header area */
+  .tier-header {
+    background-color: #f8f8f8;
+    padding: 16px;
+  }
+  
+  .tier-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .tier-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .tier-icon {
+    font-size: 24px;
+  }
+  
+  .tier-price {
+    font-weight: 500;
+    margin: 8px 0 0;
+    color: #333;
+  }
+  
+  /* Tier body area */
+  .tier-body {
+    padding: 16px;
+  }
+  
+  .benefits-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+  }
+  
+  .benefits-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
+  
+  .benefit-item {
+    display: flex;
+    margin-bottom: 6px;
+    line-height: 1.5;
+  }
+  
+  .benefit-check {
+    color: #2a9d8f;
+    margin-right: 8px;
+    font-weight: bold;
+  }
+  
+  .benefit-text {
+    color: #333;
+  }
+  
+  .target-audience {
+    font-size: 14px;
+    padding-top: 12px;
+    border-top: 1px solid #eee;
+    color: #666;
+  }
+  
+  /* Rationale section */
+  .rationale-section {
+    background-color: #fff9e6;
+    padding: 24px;
+    border-radius: 8px;
+    margin-top: 40px;
+  }
+  
+  .rationale-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+  
+  .rationale-intro {
+    margin-bottom: 16px;
+  }
+  
+  .rationale-list {
+    padding-left: 24px;
+  }
+  
+  .rationale-list li {
+    margin-bottom: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Responsive adjustments */
+  @media (min-width: 768px) {
+    .tier-card {
+      flex-direction: row;
+    }
+    
+    .tier-header {
+      width: 30%;
+    }
+    
+    .tier-body {
+      width: 70%;
+    }
+    
+    .membership-title {
+      font-size: 32px;
+    }
+  }

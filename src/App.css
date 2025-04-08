@@ -36,3 +36,30 @@
     transform: rotate(360deg);
   }
 }
+
+.mt-4 {
+  margin-top: 1.5rem;
+  padding: 0.5rem 1.5rem 0.5rem;
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  margin-right: 1rem;
+  text-decoration: none;
+  color: white;
+
+
+}
+.mt-4:hover {
+  background-color: #61dafb;
+  color: #282c34;
+  border-color: #61dafb;
+}
+
+/* Active link style */
+.mt-4:active {
+  background-color: white;
+  color: #1b4332; /* Deep green to match bg-green-800 */
+  border-color: white;
+  border-radius: 0.5rem 0.5rem 0 0;
+}

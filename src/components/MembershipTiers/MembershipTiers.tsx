@@ -79,7 +79,48 @@ const MembershipTiers = () => {
       target: "Leadership donors, high-capacity supporters",
       icon: "🏞️"
     }
+  ]
+  const featuredIdeas = [
+    {
+      title: "Quarterly Digital Newsletter",
+      content: [
+        "Trail of the Season: Featuring lesser-known trails across all 37 park sites",
+        "Wildlife Watch: Seasonal wildlife viewing opportunities with expert tips",
+        "Park Project Spotlights: Behind-the-scenes updates on restoration work",
+        "Member Stories: How members connect with and support the parks",
+        "Climate Action: Updates on GGNPC climate resilience initiatives",
+        "Digital Ranger: Virtual tours of seasonal highlights and hidden gems",
+        "Volunteer Opportunities: Upcoming stewardship days and events"
+      ]
+    },
+    {
+      title: "37 Parks Passport Challenges",
+      content: [
+        "Seasonal Explorer: Visit 5 different park sites in each season",
+        "Habitat Champion: Experience all 19 distinct ecosystems in the parks",
+        "History Hunter: Discover 10 historical landmarks across the parks",
+        "Watershed Wanderer: Visit all 7 watersheds within the GGNRA",
+        "Birding Expedition: Spot and document 25 bird species in the parks",
+        "Family Adventure: Complete 12 family-friendly activities across the parks",
+        "Social Justice Journey: Visit sites highlighting social justice and equity stories",
+        "Climate Resilience Trail: Explore areas showcasing climate adaptation"
+      ]
+    },
+    {
+      title: "Recognition Elements",
+      content: [
+        "Digital Badge System: Collectible digital badges for your member profile when completing challenges",
+        "Park Steward Recognition Wall: Interactive digital display at visitor centers showing member names",
+        "Anniversary Acknowledgment: Special recognition for membership milestones (1, 5, 10, 20+ years)",
+        "Member Spotlight: Featured stories in Gateways Magazine and social media",
+        "Commemorative Items: Sustainable, mission-related items like native seed packets or custom trail maps",
+        "Donor Honor Roll: Annual recognition in GGNPC's annual report",
+        "Park Partner Certificate: Personalized digital certificate highlighting your impact"
+      ]
+    }
   ];
+
+  
 
   return (
     <div className="membership-container">
@@ -135,6 +176,25 @@ const MembershipTiers = () => {
             </div>
           </div>
         ))}
+      </div>
+
+      <div className="featured-ideas-section">
+      <div className="mb-10">
+        <h3 className="text-2xl font-bold mb-6 text-center">Featured Membership Program Elements</h3>
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {featuredIdeas.map((idea, index) => (
+            <div key={index} className="bg-white rounded-lg shadow-lg p-5">
+              <h4 className="text-lg font-bold mb-3 text-blue-800">{idea.title}</h4>
+              <ul className="list-disc ml-4 space-y-2">
+                {idea.content.map((item, i) => (
+                  <li key={i} className="text-sm">{item}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
       </div>
       
       {/* Tier Consolidation Rationale */}

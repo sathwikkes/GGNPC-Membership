@@ -26,7 +26,7 @@ const MembershipTiers = () => {
         "All Explorer benefits",
         "Family membership (valid for 2 adults + children under 18)",
         "Quarterly 'Family Adventure Pack'",
-        "Four free parking passes annually",
+        <s>Four free parking passes annually</s>,
         "20% discount on family-oriented park programs",
         "Printed Gateways Magazine subscription"
       ],

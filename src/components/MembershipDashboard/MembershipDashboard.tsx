@@ -9,7 +9,8 @@ const data = [
     "members": 9000,
     "revenuePerMember": 6333.33,
     "tiers": 8,
-    "avgBenefits": 6.25
+    "avgBenefits": 6.25,
+    "Total # of Benefits": 10
   },
   {
     "name": "Sempervirens Fund",
@@ -17,7 +18,8 @@ const data = [
     "members": 15000,
     "revenuePerMember": 1133.33,
     "tiers": 2,
-    "avgBenefits": 5.00
+    "avgBenefits": 5.00,
+    "Total # of Benefits": 4
   },
   {
     "name": "Marine Mammal",
@@ -25,7 +27,8 @@ const data = [
     "members": 20000,
     "revenuePerMember": 1050,
     "tiers": 5,
-    "avgBenefits": 5.60
+    "avgBenefits": 5.60,
+    "Total # of Benefits": 8
   },
   {
     "name": "Yosemite",
@@ -33,7 +36,8 @@ const data = [
     "members": 56000,
     "revenuePerMember": 446.43,
     "tiers": 8,
-    "avgBenefits": 13.63
+    "avgBenefits": 13.63,
+    "Total # of Benefits": 17
   },
   {
     "name": "Surfrider",
@@ -41,7 +45,8 @@ const data = [
     "members": 50000,
     "revenuePerMember": 280,
     "tiers": 4,
-    "avgBenefits": 4.75
+    "avgBenefits": 4.75,
+    "Total # of Benefits": 6
   },
   {
     "name": "CA State Parks",
@@ -49,8 +54,19 @@ const data = [
     "members": 77000,
     "revenuePerMember": 129.87,
     "tiers": 3,
-    "avgBenefits": 7.00
-  }
+    "avgBenefits": 7.00,
+    "Total # of Benefits": 8
+  }, 
+//   {
+//     "name": "National Park Foundation",
+//     "budget": 151.5,
+//     "members": 237000,
+//     "revenuePerMember": 500,
+//     "tiers": 4,
+//     "avgBenefits": 5.00,
+//     "Total # of Benefits": 7
+// }
+
 ];
 
 const uniqueBenefits = [
@@ -71,7 +87,6 @@ const otherOrgBenefits = [
   "Discounted tours",
   "Quarterly newsletter",
   "Discount on gift store purchases",
-  "Animal release celebration",
   "Donor Passport",
   "Outdoor Adventures discounts",
   "Discounted stays at special locations",
@@ -99,7 +114,7 @@ const getBarFill = (name: string): string => {
     switch(activeChart) {
       case 'revenuePerMember':
         return (
-            <ResponsiveContainer width="100%" height={800}> 
+            <ResponsiveContainer width="100%" height={750}> 
             <BarChart data={chartData}>
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis dataKey="name" />
@@ -116,7 +131,7 @@ const getBarFill = (name: string): string => {
         );
       case 'members':
         return (
-          <ResponsiveContainer width="100%" height={800}>
+          <ResponsiveContainer width="100%" height={750}>
             <BarChart data={chartData}>
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis dataKey="name" />
@@ -133,7 +148,7 @@ const getBarFill = (name: string): string => {
         );
       case 'budget':
         return (
-          <ResponsiveContainer width="100%" height={800}>
+          <ResponsiveContainer width="100%" height={750}>
             <BarChart data={chartData}>
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis dataKey="name" />
@@ -150,11 +165,12 @@ const getBarFill = (name: string): string => {
         );
       case 'tiers':
         return (
-          <ResponsiveContainer width="100%" height={800}>
+          <ResponsiveContainer width="100%" height={750}>
             <ComposedChart data={chartData}>
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis dataKey="name" />
               <YAxis yAxisId="left" label={{ value: 'Number of Tiers', angle: -90, position: 'insideLeft' }} />
+              <YAxis yAxisId="right" orientation="right" label={{ value: 'Avg Benefits per Tier', angle: 90, position: 'insideRight' }} />
               <YAxis yAxisId="right" orientation="right" label={{ value: 'Avg Benefits per Tier', angle: 90, position: 'insideRight' }} />
               <Tooltip />
               <Legend />
@@ -164,6 +180,7 @@ const getBarFill = (name: string): string => {
                 ))}
               </Bar>
               <Line yAxisId="right" type="monotone" dataKey="avgBenefits" name="Avg Benefits per Tier" stroke="#ff7300" />
+              {/* <Line yAxisId="right" type="monotone" dataKey="Total # of Benefits" name="Total # of Benefits offered" stroke="#0000FF" /> */}
             </ComposedChart>
           </ResponsiveContainer>
         );

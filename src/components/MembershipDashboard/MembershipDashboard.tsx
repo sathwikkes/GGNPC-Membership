@@ -232,28 +232,7 @@ const getBarFill = (name: string): string => {
       
       {renderChart()}
       
-      {/* <div className="mt-10 flex flex-col lg:flex-row gap-6 items-start">
-        <div className="w-full lg:w-1/2">
-        <div className="bg-gray-100 p-4 rounded mb-4">
-            <h3 className="text-lg font-bold mb-2">GGNPC Unique Benefits</h3>
-            <ul className="list-disc pl-5">
-            {uniqueBenefits.map((benefit, index) => (
-                <li key={index} className="mb-1">{benefit}</li>
-            ))}
-            </ul>
-        </div>
-
-            
-            <div className="bg-gray-100 p-4 rounded">
-        <h3 className="text-lg font-bold mb-2">Benefits to Consider Adding</h3>
-        <ul className="list-disc pl-5">
-        {otherOrgBenefits.map((benefit, index) => (
-            <li key={index} className="mb-1">{benefit}</li>
-        ))}
-        </ul>
-        </div>
-        </div>
-        </div> */}
+  
         <div className="benefit-section">
         <div className="mt-4">
         <div className="w-full md:w-2/3 lg:w-1/2">
